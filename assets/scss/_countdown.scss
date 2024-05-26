@@ -1,0 +1,63 @@
+@import url("https://fonts.cdnfonts.com/css/ds-digital");
+
+.pvl-theme {
+  .countdown-clock {
+    background: rgba(0, 0, 0, 0.5);
+    top: px-to-rem(69px);
+    .text-digital {
+      font-family: "DS-Digital", sans-serif;
+      font-size: $countdown-font-size-base;
+      height: $countdown-font-size-base;
+      color: $countdown-digit-back-color;
+      .digit {
+        width: $countdown-font-size-base * 0.509;
+        height: $countdown-font-size-base * 1.5;
+        color: $white;
+        text-align: right;
+        position: relative;
+        &::before {
+          content: "0";
+          color: $countdown-digit-back-color;
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      $countdown-font-size-base: $font-size-base * 2;
+      .text-digital {
+        font-size: $countdown-font-size-base;
+        height: $countdown-font-size-base;
+        .digit {
+          width: $countdown-font-size-base * 0.509;
+          height: $countdown-font-size-base * 1.5;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .countdown-clock {
+      margin-top: px-to-rem(-190px);
+    }
+  }
+  @include media-breakpoint-up(sm) {
+    .countdown-clock {
+      margin-top: px-to-rem(-200px);
+    }
+  }
+  @include media-breakpoint-up(md) {
+    .countdown-clock {
+      margin-top: px-to-rem(-230px);
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .countdown-clock {
+      margin-top: px-to-rem(-120px);
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    .countdown-clock {
+      margin-top: px-to-rem(-150px);
+    }
+  }
+}

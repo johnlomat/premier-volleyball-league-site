@@ -1,0 +1,8 @@
+// PVL background image mixin
+
+@mixin background-image($url, $size, $repeat, $position) {
+  background-image: url($url);
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $position;
+}

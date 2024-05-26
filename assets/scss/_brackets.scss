@@ -1,0 +1,167 @@
+.pvl-theme {
+  .bracket {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .column {
+    display: flex !important;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: space-around;
+    align-content: center;
+    width: px-to-rem(265px) !important;
+    height: px-to-rem(400px) !important;
+    &:first-child {
+      .match-lines.alt {
+        display: none;
+      }
+    }
+    &:last-child {
+      .match-lines {
+        display: none;
+      }
+      .match-lines.alt {
+        display: block;
+      }
+    }
+    &:nth-child(2) {
+      .match-lines {
+        .line.two {
+          height: px-to-rem(101px);
+        }
+      }
+    }
+  }
+  .match {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: px-to-rem(240px);
+    max-width: px-to-rem(240px);
+    height: px-to-rem(84px);
+    .match-top {
+      padding-top: px-to-rem(5px);
+      padding-bottom: px-to-rem(5px);
+      border-radius: px-to-rem(2px) px-to-rem(2px) 0 0;
+    }
+    .match-bottom {
+      padding-top: px-to-rem(5px);
+      padding-bottom: px-to-rem(5px);
+      border-radius: 0 0 px-to-rem(2px) px-to-rem(2px);
+    }
+    .team {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      border: px-to-rem(1px) solid black;
+      position: relative;
+      span {
+        padding-left: px-to-rem(8px);
+        &:last-child {
+          padding-right: px-to-rem(8px);
+        }
+      }
+      .score {
+        margin-left: auto;
+      }
+      &:first-child {
+        margin-bottom: px-to-rem(-1px);
+      }
+    }
+    &:nth-child(even) {
+      .match-lines {
+        .line.two {
+          transform: translate(0, -100%);
+        }
+      }
+    }
+  }
+  .match-lines {
+    display: block;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    margin-top: 0px;
+    right: px-to-rem(-1px);
+    .line {
+      background: red;
+      position: absolute;
+    }
+    .line.one {
+      height: px-to-rem(1px);
+      width: px-to-rem(12px);
+    }
+    .line.two {
+      height: px-to-rem(51px);
+      width: px-to-rem(1px);
+      left: px-to-rem(11px);
+    }
+  }
+  .match-lines.alt {
+    left: px-to-rem(-12px);
+  }
+  .theme-light {
+    border: px-to-rem(1px) solid $gray-500;
+    padding-left: px-to-rem(25px);
+    padding-top: px-to-rem(25px);
+    padding-bottom: px-to-rem(25px);
+    background-color: $white;
+    .match-lines {
+      .line {
+        background: $gray-600;
+      }
+    }
+    .team {
+      background: $secondary;
+      border-color: $gray-600;
+      color: $white;
+    }
+    .winner-top {
+      .match-top {
+        background: $primary;
+        color: $secondary;
+        border-color: $gray-600;
+        z-index: 1;
+        .seed {
+          color: $secondary;
+          font-size: map-get($font-sizes, 2);
+          min-width: px-to-rem(10px);
+        }
+        .score {
+          color: $secondary;
+          font-size: map-get($font-sizes, 4);
+        }
+      }
+    }
+    .winner-bottom {
+      .match-bottom {
+        background: $primary;
+        color: $secondary;
+        border-color: $gray-600;
+        z-index: 1;
+        .seed {
+          color: $secondary;
+          font-size: map-get($font-sizes, 2);
+          min-width: px-to-rem(10px);
+        }
+        .score {
+          color: $secondary;
+          font-size: map-get($font-sizes, 4);
+        }
+      }
+    }
+    .match {
+      .seed {
+        color: $white;
+        font-size: map-get($font-sizes, 2);
+        min-width: px-to-rem(10px);
+      }
+      .score {
+        color: $white;
+        font-size: map-get($font-sizes, 4);
+      }
+    }
+  }
+}

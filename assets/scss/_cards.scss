@@ -1,0 +1,20 @@
+.pvl-theme {
+  // Card transition effect
+  .card {
+    .card-img {
+      transition: $transition-base;
+    }
+    &:hover {
+      .card-img {
+        transform: scale(105%);
+      }
+    }
+  }
+
+  // Match Card
+  .match-card-set-score {
+    &.is-winner {
+      color: $primary;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+// Swiper variables
+@import "../../node_modules/swiper/swiper-vars.scss";
+
+.pvl-theme {
+  .swiper {
+    visibility: hidden;
+
+    // Default style
+    .swiper-button {
+      border-radius: $border-radius-sm;
+      background-color: $primary;
+      width: px-to-rem(35px);
+      height: px-to-rem(35px);
+      &::after {
+        font-size: map-get($font-sizes, 6);
+        color: $secondary;
+      }
+      &.bg-secondary {
+        &::after {
+          color: $primary;
+        }
+      }
+    }
+
+    // Player of the game slider
+    &.player-of-the-game {
+      @include media-breakpoint-down(lg) {
+        .swiper-button {
+          top: 25%;
+        }
+      }
+    }
+
+    // Player stats card slider
+    &.player-stats-cards {
+      @include media-breakpoint-up(lg) {
+        .swiper-slide {
+          width: px-to-rem(420px) !important;
+        }
+      }
+    }
+
+    // All teams slider
+    &.all-teams {
+      .swiper-slide {
+        transition: $transition-base;
+        opacity: 0.5;
+        .image-wrapper {
+          border-radius: px-to-rem(26px);
+          border: px-to-rem(2px) solid rgba(0, 0, 0, 0);
+        }
+      }
+      .swiper-slide-active {
+        transform: scale(1.1);
+        opacity: 1;
+        .image-wrapper {
+          border-color: $white;
+        }
+      }
+    }
+  }
+}
+
+// Swiper Modules
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/modules/effect-fade.scss";
+@import "../../node_modules/swiper/modules/navigation.scss";
+@import "../../node_modules/swiper/modules/autoplay.scss";
+@import "../../node_modules/swiper/modules/free-mode.scss";

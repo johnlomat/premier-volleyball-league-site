@@ -1,0 +1,297 @@
+// Home page style
+.pvl-theme {
+  &.home-page {
+    // Hero section
+    .pvl-section-1 {
+      min-height: px-to-rem(720px);
+      @include background-image("../img/news/PVL-Open-Conference-2019-Petrogazz-vs.-Balipure-Bombita-0920-1536x1024.jpg", cover, no-repeat, center);
+    }
+    @include media-breakpoint-down(sm) {
+      .hero-content {
+        transform: translateY(px-to-rem(-40px));
+      }
+    }
+
+    // Player of the game section
+    .pvl-section-5 {
+      @include background-image("../img/backgrounds/section-background-2.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+
+    // All teams
+    .pvl-section-7 {
+      @include background-image("../img/backgrounds/section-background-3.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+  }
+
+  // Latest news page style
+  &.news-page {
+    // Hero section
+    .pvl-section-1 {
+      @include background-image("../img/backgrounds/section-background-4.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+    @include media-breakpoint-up(xxl) {
+      .pvl-section-1 {
+        @include background-image("../img/backgrounds/section-background-4.png", cover, no-repeat, center center);
+      }
+    }
+  }
+
+  // Latest news single post page style
+  &.single-news-post-page {
+    // Hero section
+    .pvl-section-1 {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-blend-mode: luminosity;
+      padding-top: min(px-to-rem(273px), 20%);
+      padding-bottom: min(px-to-rem(273px), 20%);
+    }
+    .featured-image {
+      img {
+        margin-top: max(px-to-rem(-450px), -35%);
+      }
+    }
+  }
+
+  // All teams page style
+  &.teams-page {
+    // Hero section
+    .pvl-section-1 {
+      @include background-image("../img/backgrounds/section-background-5.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+    @include media-breakpoint-up(xxl) {
+      .pvl-section-1 {
+        @include background-image("../img/backgrounds/section-background-5.png", cover, no-repeat, center center);
+      }
+    }
+  }
+
+  // Standings page style
+  &.standings-page {
+    // Hero section
+    .pvl-section-1 {
+      @include background-image("../img/backgrounds/section-background-5.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+    @include media-breakpoint-up(xxl) {
+      .pvl-section-1 {
+        @include background-image("../img/backgrounds/section-background-5.png", cover, no-repeat, center center);
+      }
+    }
+  }
+
+  // Videos page style
+  &.videos-page {
+    // Hero section
+    .pvl-section-1 {
+      @include background-image("../img/backgrounds/section-background-6.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+  }
+
+  // Watch Live page style
+  &.live-page {
+    // Hero section
+    .pvl-section-1 {
+      @include background-image("../img/backgrounds/section-background-6.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+  }
+
+  // Match Recaps page style
+  &.recap-page {
+    // Hero section
+    .pvl-section-1 {
+      @include background-image("../img/backgrounds/section-background-6.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+  }
+
+  // Match Schedules page style
+  &.schedule-page {
+    // Hero section
+    .pvl-section-1 {
+      @include background-image("../img/backgrounds/section-background-7.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+    @include media-breakpoint-up(xxl) {
+      .pvl-section-1 {
+        @include background-image("../img/backgrounds/section-background-7.png", cover, no-repeat, center center);
+      }
+    }
+  }
+
+  // Players page style
+  &.players-page {
+    // Hero section
+    .pvl-section-1 {
+      @include background-image("../img/backgrounds/section-background-8.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+    @include media-breakpoint-up(xxl) {
+      .pvl-section-1 {
+        @include background-image("../img/backgrounds/section-background-8.png", cover, no-repeat, center center);
+      }
+    }
+  }
+
+  // Login page style
+  &.login-page {
+    // Hero section
+    .pvl-section-1 {
+      @include background-image("../img/backgrounds/section-background-9.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+      height: px-to-rem(350px);
+    }
+    @include media-breakpoint-up(xxl) {
+      .pvl-section-1 {
+        @include background-image("../img/backgrounds/section-background-9.png", cover, no-repeat, center center);
+      }
+    }
+  }
+
+  // About us page style
+  &.about-us-page {
+    // Hero section
+    .pvl-section-1 {
+      @include background-image("../img/backgrounds/section-background-1.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+    @include media-breakpoint-up(xxl) {
+      .pvl-section-1 {
+        @include background-image("../img/backgrounds/section-background-1.png", cover, no-repeat, center center);
+      }
+    }
+  }
+
+  // Gallery page style
+  &.gallery-page {
+    // Hero section
+    .pvl-section-1 {
+      @include background-image("../img/backgrounds/section-background-10.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+    @include media-breakpoint-up(xxl) {
+      .pvl-section-1 {
+        @include background-image("../img/backgrounds/section-background-10.png", cover, no-repeat, center center);
+      }
+    }
+  }
+
+  // Single gallery page style
+  &.single-gallery-page {
+    // Hero section
+    .pvl-section-1 {
+      @include background-image("../img/backgrounds/section-background-10.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+    @include media-breakpoint-up(xxl) {
+      .pvl-section-1 {
+        @include background-image("../img/backgrounds/section-background-10.png", cover, no-repeat, center center);
+      }
+    }
+  }
+
+  // Announcement page style
+  &.announcement-page {
+    // Hero section
+    .pvl-section-1 {
+      @include background-image("../img/backgrounds/section-background-11.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+    @include media-breakpoint-up(xxl) {
+      .pvl-section-1 {
+        @include background-image("../img/backgrounds/section-background-11.png", cover, no-repeat, center center);
+      }
+    }
+  }
+
+  // Single video page style
+  &.single-video-page {
+    // Hero section
+    .pvl-section-1 {
+      @include background-image("../img/backgrounds/section-background-12.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+    @include media-breakpoint-up(xxl) {
+      .pvl-section-1 {
+        @include background-image("../img/backgrounds/section-background-12.png", cover, no-repeat, center center);
+      }
+    }
+  }
+
+  // Single team page style
+  &.single-team-page {
+    // Hero section
+    .pvl-section-1 {
+      @include background-image("../img/backgrounds/section-background-13.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+    @include media-breakpoint-up(xxl) {
+      .pvl-section-1 {
+        @include background-image("../img/backgrounds/section-background-13.png", cover, no-repeat, center center);
+      }
+    }
+  }
+
+  // Single player page style
+  &.single-player-page {
+    // Hero section
+    .pvl-section-1 {
+      @include background-image("../img/backgrounds/section-background-14.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+    @include media-breakpoint-up(xxl) {
+      .pvl-section-1 {
+        @include background-image("../img/backgrounds/section-background-14.png", cover, no-repeat, center center);
+      }
+    }
+  }
+
+  // Conference leader page style
+  &.conference-leader-page {
+    // Hero section
+    .pvl-section-1 {
+      @include background-image("../img/backgrounds/section-background-15.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+    @include media-breakpoint-up(xxl) {
+      .pvl-section-1 {
+        @include background-image("../img/backgrounds/section-background-15.png", cover, no-repeat, center center);
+      }
+    }
+  }
+
+  // Stats leader page style
+  &.stats-leader-page {
+    // Hero section
+    .pvl-section-1 {
+      @include background-image("../img/backgrounds/section-background-16.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+    @include media-breakpoint-up(xxl) {
+      .pvl-section-1 {
+        @include background-image("../img/backgrounds/section-background-16.png", cover, no-repeat, center center);
+      }
+    }
+  }
+
+  // tickets page style
+  &.tickets-page {
+    // Hero section
+    .pvl-section-1 {
+      @include background-image("../img/backgrounds/section-background-5.png", cover, no-repeat, bottom center);
+      background-blend-mode: luminosity;
+    }
+    @include media-breakpoint-up(xxl) {
+      .pvl-section-1 {
+        @include background-image("../img/backgrounds/section-background-5.png", cover, no-repeat, center center);
+      }
+    }
+  }
+}

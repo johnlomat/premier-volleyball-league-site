@@ -1,0 +1,29 @@
+.pvl-theme {
+  .shape-divider-top {
+    margin-top: px-to-rem(-5px);
+  }
+  .shape-divider-bottom {
+    margin-bottom: px-to-rem(-5px);
+  }
+  .shape-divider-1 {
+    @include background-image("../img/shape-dividers/shape-divider-1.png", cover, no-repeat, top center);
+  }
+  .shape-divider-2 {
+    @include background-image("../img/shape-dividers/shape-divider-2.png", cover, no-repeat, top center);
+  }
+  .shape-divider-3 {
+    @include background-image("../img/shape-dividers/shape-divider-3.png", cover, no-repeat, top center);
+  }
+  .shape-divider-4 {
+    @include background-image("../img/shape-dividers/shape-divider-4.png", cover, no-repeat, bottom center);
+  }
+  .shape-divider-5 {
+    @include background-image("../img/shape-dividers/shape-divider-5.png", cover, no-repeat, top center);
+  }
+  .shape-divider-6 {
+    @include background-image("../img/shape-dividers/shape-divider-6.png", cover, no-repeat, bottom center);
+  }
+  .shape-divider-7 {
+    @include background-image("../img/shape-dividers/shape-divider-7.png", cover, no-repeat, top center);
+  }
+}

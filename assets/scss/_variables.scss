@@ -1,0 +1,246 @@
+// PVL custom styles variables
+
+// Override Bootstrap default variables
+//
+// Colors
+$primary: #f7bc24;
+$secondary: #2f2f2f;
+$white: #ffffff;
+$gray-50: #f2f2f2;
+$gray-100: #f4f4f4;
+$gray-200: #e9e9e9;
+$gray-500: #b4b4b4;
+$gray-600: #b7b7b7;
+$gray-700: #595959;
+$gray-900: #353535;
+$black: #000000;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #ff0000;
+$dark: #212529;
+
+// Theme colors
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $gray-100,
+  "dark": $dark,
+  "white": $white,
+  "black": $black,
+  "gray-50": $gray-50,
+  "gray-200": $gray-200,
+  "gray-500": $gray-500,
+  "gray-700": $gray-700,
+  "gray-900": $gray-900,
+  "AEABA3": #aeaba3,
+);
+
+// Table variants
+$table-variants: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $gray-100,
+  "dark": $dark,
+  "gray-50": $gray-50,
+  "gray-200": $gray-200,
+  "gray-500": $gray-500,
+  "gray-700": $gray-700,
+);
+
+// Table stripe background factor
+$table-striped-bg-factor: 0.075;
+
+// Body
+$body-color: #404040;
+
+// Font size base
+$font-size-base: 1rem;
+$pixel-base: 16px;
+
+// Font sizes
+$font-sizes: (
+  1: px-to-rem(11px),
+  2: px-to-rem(12px),
+  3: px-to-rem(13px),
+  4: px-to-rem(14px),
+  5: px-to-rem(15px),
+  6: px-to-rem(16px),
+  7: px-to-rem(17px),
+  8: px-to-rem(18px),
+  9: px-to-rem(19px),
+  10: px-to-rem(20px),
+  11: px-to-rem(21px),
+  12: px-to-rem(22px),
+  13: px-to-rem(23px),
+  14: px-to-rem(24px),
+  15: px-to-rem(25px),
+  16: px-to-rem(30px),
+  17: px-to-rem(35px),
+  18: px-to-rem(40px),
+  19: px-to-rem(45px),
+  20: px-to-rem(50px),
+  21: px-to-rem(100px),
+  25: px-to-rem(150px),
+);
+
+// Font weight values
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: 900;
+
+// Position values
+$position-values: (
+  0: 0,
+  50: 50%,
+  100: 100%,
+  n25px: px-to-rem(-25px),
+  n50px: px-to-rem(-50px),
+  n75px: px-to-rem(-75px),
+  n100px: px-to-rem(-100px),
+);
+
+// Card Border radius
+$card-border-radius: px-to-rem(10px);
+$card-inner-border-radius: $card-border-radius;
+
+// Gradient
+$gradient: linear-gradient(180deg, rgba($black, 0.05) 50%, rgba($black, 1) 100%);
+
+// Focus ring
+$focus-ring-width: px-to-rem(2px);
+
+// Container max widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1250px,
+);
+
+// Spacers
+$spacers: (
+  0: 0,
+  1: px-to-rem(5px),
+  2: px-to-rem(10px),
+  3: px-to-rem(15px),
+  4: px-to-rem(20px),
+  5: px-to-rem(25px),
+  6: px-to-rem(30px),
+  7: px-to-rem(50px),
+  8: px-to-rem(70px),
+  9: px-to-rem(90px),
+  10: px-to-rem(100px),
+);
+
+// Headings and body font family
+$font-family-base: "Lato", sans-serif;
+$headings-font-family: "Lato", sans-serif;
+
+// Headings and body font size
+$h1-font-size: px-to-rem(50px);
+$h2-font-size: px-to-rem(35px);
+
+// Transition
+$transition-base: all 0.3s ease-in-out;
+
+// Navbar
+$nav-link-font-size: px-to-rem(14px);
+$nav-link-color: #131313;
+$navbar-light-hover-color: $primary;
+$navbar-light-active-color: $primary;
+$navbar-toggler-padding-x: 0;
+$navbar-toggler-padding-y: 0;
+$navbar-nav-link-padding-x: px-to-rem(10px);
+
+// Navbar Transition
+$navbar-collapsed-transition-duration: 0.15s;
+
+// Nav pills
+$nav-pills-border-radius: px-to-rem(25px);
+$nav-pills-link-active-bg: $secondary;
+$nav-pills-link-active-color: $primary;
+
+// Buttons
+$btn-font-size-sm: px-to-rem(14px);
+$btn-padding-x-sm: px-to-rem(30px);
+
+$btn-font-size-lg: px-to-rem(18px);
+$btn-padding-x-lg: px-to-rem(30px);
+
+// Enable Bootstrap CSS Grid
+$enable-cssgrid: true;
+
+// Countdown fonts
+$countdown-digit-back-color: rgba(255, 255, 255, 0.2);
+$countdown-font-size-base: px-to-rem(34px);
+
+// Opacity
+$additional-opacity-values: (
+  5: 0.05,
+  15: 0.15,
+);
+
+// Width values
+$additional-width-values: (
+  90: 90%,
+);
+
+// Max width values
+$additional-max-width-values: (
+  290px: px-to-rem(290px),
+  450px: px-to-rem(450px),
+  598px: px-to-rem(598px),
+  675px: px-to-rem(675px),
+  800px: px-to-rem(800px),
+  980px: px-to-rem(980px),
+  1080px: px-to-rem(1080px),
+);
+
+// Height values
+$additional-height-values: (
+  100px: px-to-rem(100px),
+);
+
+// Text alignment values
+$additional-text-align-values: (
+  justify: justify,
+);
+
+// Additional utilities
+//
+// Text clamp values
+$text-clamp-values: (
+  1: 1,
+  2: 2,
+);
+
+// Transform skew values
+$transform-skew-values: (
+  sm: skew(15deg),
+  md: skew(25deg),
+  lg: skew(50deg),
+  n-sm: skew(-15deg),
+  n-md: skew(-25deg),
+  n-lg: skew(-50deg),
+);
+
+$text-shadow-values: (
+  normal: 0 12px 12px rgba(0, 0, 0, 0.5),
+);
+
+// List style
+$list-style-values: (
+  none: none,
+);
+
+// Swiper variables
+$themeColor: $primary;

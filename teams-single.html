@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Team | Premier Volleyball League</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png" />
+
+    <!-- PVL Custom CSS -->
+    <link rel="stylesheet" href="assets/css/bundle.css" id="pvl-custom-css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css" id="bootstrap-icons-css" />
+  </head>
+  <body class="pvl-theme single-team-page">
+    <div id="page-container">
+      <!-- Header code -->
+      <header class="pvl-header fixed-top">
+        <nav class="navbar navbar-expand-xl navbar-light py-0">
+          <div class="container-xl">
+            <a class="navbar-brand position-relative" href="index.html"><img src="assets/img/logo/pvl-logo.png" class="img-fluid pvl-logo" alt="PVL Logo" width="141" height="59" /></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="bi bi-list text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <div class="row row-cols-1 py-4 d-xl-none text-secondary">
+                <div class="col text-center d-flex justify-content-center fs-20">
+                  <div class="user-profile-pic"><i class="bi bi-person-circle"></i></div>
+                </div>
+                <div class="col text-center fs-8 fw-bold text-uppercase">
+                  <div class="user-fullname">Lorem Ipsum Dolor</div>
+                </div>
+                <div class="col text-center fs-3">
+                  <div class="user-last-login">Last Login August 10, 2023</div>
+                </div>
+              </div>
+              <ul class="navbar-nav navbar-nav-scroll me-auto mb-2 mb-xl-0 text-center" style="--bs-scroll-height: 400px">
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html">Latest News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="teams.html">Teams</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="players.html">Players</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="standings.html">Standings</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="schedule.html">Schedule</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="recap.html">Recap</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="live.html">Live</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="videos.html">Videos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Photos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="announcement.html">Announcement</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tickets.html">Tickets</a>
+                </li>
+                <li class="nav-item me-2 d-none d-xl-block">
+                  <a href="">
+                    <img src="assets/img/logo/st-logo.png" class="img-fluid" alt="ST Logo" width="42" height="36" />
+                  </a>
+                </li>
+                <li class="nav-item d-none d-xl-block">
+                  <a href="">
+                    <img src="assets/img/logo/vl-logo.png" class="img-fluid" alt="VL Logo" width="29" height="34" />
+                  </a>
+                </li>
+                <li class="nav-item d-xl-none mt-4">
+                  <a class="nav-link" href="#">My Account</a>
+                </li>
+                <li class="nav-item d-xl-none mb-4">
+                  <a class="nav-link" href="#">Logout</a>
+                </li>
+              </ul>
+              <div class="nav-social-link mx-auto mb-5 d-xl-none">
+                <div class="d-flex justify-content-between">
+                  <div class="social-icon-facebook d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/fb-logo.svg" alt="Facebook logo" width="45" height="45" /></a>
+                  </div>
+                  <div class="social-icon-twitter d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/twitter-logo.svg" alt="Twitter logo" width="45" height="45" /></a>
+                  </div>
+                  <div class="social-icon-instagram d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/instagram-logo.svg" alt="Instagram logo" width="45" height="45" /></a>
+                  </div>
+                  <div class="social-icon-youtube d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/youtube-logo.svg" alt="YouTube logo" width="45" height="45" /></a>
+                  </div>
+                  <div class="social-icon-tiktok d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/tiktok-logo.svg" alt="TikTok logo" width="45" height="45" /></a>
+                  </div>
+                  <div class="social-icon-kumu d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/kumu-logo.svg" alt="Kumu logo" width="45" height="45" /></a>
+                  </div>
+                  <div class="social-icon-thread d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/thread-logo.svg" alt="Thread logo" width="45" height="45" /></a>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary btn-sm rounded-pill d-none d-xl-block" href="login.html" role="button">Login</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- End of Header code -->
+
+      <!-- Main area code -->
+      <div id="pvl-main-area">
+        <!-- Main content -->
+        <div id="main-content">
+          <!-- Hero section -->
+          <section class="pvl-section-1 d-flex align-items-center position-relative bg-gray-900">
+            <div class="container-xl z-1">
+              <div class="row pt-9 pb-8">
+                <div class="col-12">
+                  <div class="text-center">
+                    <h1 class="text-primary fw-bolder">Team <span class="text-white">Stats</span></h1>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="ads-banner col-12 d-flex justify-content-center">
+                  <img src="assets/img/ads/game-on-ads-banner.png" class="img-fluid" alt="Arena plus" width="826" height="102" />
+                </div>
+              </div>
+            </div>
+            <div class="shape-divider-bottom shape-divider-1 position-absolute bottom-n50px start-0 w-100 h-100px"></div>
+          </section>
+          <!-- End of Hero section -->
+
+          <!-- Watch live section -->
+          <section class="pvl-section-2 pt-8 pb-10 bg-light position-relative">
+            <div class="container-xl z-1">
+              <div class="row gy-8 gy-md-0 mb-8">
+                <div class="col-12 col-md-3">
+                  <div class="ratio ratio-1x1">
+                    <img src="assets/img/teams/web-akari.png" class="img-fluid" alt="Team" width="300" height="300" />
+                  </div>
+                  <div class="text-uppercase text-secondary text-center fw-bolder fs-15 mb-2">TEAM INFORMATION</div>
+                  <div class="text-uppercase text-secondary fw-bolder fs-15">INFO</div>
+                  <div class="social-media mb-4">
+                    <div class="fw-bold text-secondary">Social Media:</div>
+                    <div class="social-media-wrapper d-flex">
+                      <div class="social-icon-facebook d-flex justify-content-center me-2">
+                        <a href=""><img src="assets/img/icons/fb-logo.svg" alt="Facebook logo" width="35" height="35" /></a>
+                      </div>
+                      <div class="social-icon-twitter d-flex justify-content-center me-2">
+                        <a href=""><img src="assets/img/icons/twitter-logo.svg" alt="Twitter logo" width="35" height="35" /></a>
+                      </div>
+                      <div class="social-icon-instagram d-flex justify-content-center">
+                        <a href=""><img src="assets/img/icons/instagram-logo.svg" alt="Instagram logo" width="35" height="35" /></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-uppercase text-secondary fw-bolder fs-15">BIO</div>
+                  <div class="bio-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-9">
+                  <ul class="nav nav-pills mb-3 justify-content-center justify-content-md-start" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="stats-tab" data-bs-toggle="pill" data-bs-target="#stats" type="button" role="tab" aria-controls="stats" aria-selected="true">Stats</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="roster-tab" data-bs-toggle="pill" data-bs-target="#roster" type="button" role="tab" aria-controls="roster" aria-selected="false">Roster</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="stats" role="tabpanel" aria-labelledby="stats-tab">
+                      <div class="row row-cols-1 gy-3">
+                        <div class="col">
+                          <div class="row gx-0">
+                            <div class="col-12">
+                              <div class="table-title rounded-top-4 bg-primary text-uppercase fs-10 fw-bolder text-center p-2">Conference Stats</div>
+                            </div>
+                            <div class="col-4">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">17</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Played</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">381</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Total Pts</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center">
+                                  <span class="text-primary fs-16 fw-bold px-2">22.41</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Avg Per Set</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="row gy-3 gy-lg-0">
+                            <div class="col-12 col-lg-6">
+                              <div class="row gx-0">
+                                <div class="col-12">
+                                  <div class="table-title rounded-top-4 bg-primary text-uppercase fs-10 fw-bolder text-center p-2">Pts</div>
+                                </div>
+                                <div class="col-4">
+                                  <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                    <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                      <span class="text-primary fs-16 fw-bold px-2">333</span>
+                                      <span class="text-uppercase text-white fs-10 fw-bold px-2">Atk</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-4">
+                                  <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                    <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                      <span class="text-primary fs-16 fw-bold px-2">32</span>
+                                      <span class="text-uppercase text-white fs-10 fw-bold px-2">Blk</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-4">
+                                  <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                    <div class="table-column-wrapper d-flex flex-column text-center">
+                                      <span class="text-primary fs-16 fw-bold px-2">16</span>
+                                      <span class="text-uppercase text-white fs-10 fw-bold px-2">Ace</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                              <div class="row gx-0">
+                                <div class="col-12">
+                                  <div class="table-title rounded-top-4 bg-primary text-uppercase fs-10 fw-bolder text-center p-2">Exe</div>
+                                </div>
+                                <div class="col-4">
+                                  <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                    <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                      <span class="text-primary fs-16 fw-bold px-2">64</span>
+                                      <span class="text-uppercase text-white fs-10 fw-bold px-2">Set</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-4">
+                                  <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                    <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                      <span class="text-primary fs-16 fw-bold px-2">174</span>
+                                      <span class="text-uppercase text-white fs-10 fw-bold px-2">Dig</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-4">
+                                  <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                    <div class="table-column-wrapper d-flex flex-column text-center">
+                                      <span class="text-primary fs-16 fw-bold px-2">121</span>
+                                      <span class="text-uppercase text-white fs-10 fw-bold px-2">Rec</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="row gx-0">
+                            <div class="col-12">
+                              <div class="table-title rounded-top-4 bg-primary text-uppercase fs-10 fw-bolder text-center p-2">Flt</div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">64</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Set</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">174</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Dig</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">121</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Rec</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">64</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Set</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">174</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Dig</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center">
+                                  <span class="text-primary fs-16 fw-bold px-2">121</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Rec</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="row gx-0">
+                            <div class="col-12">
+                              <div class="table-title rounded-top-4 bg-primary text-uppercase fs-10 fw-bolder text-center p-2">Total</div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">64</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Set</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">174</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Dig</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">121</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Rec</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">64</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Set</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">174</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Dig</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center">
+                                  <span class="text-primary fs-16 fw-bold px-2">121</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Rec</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="row gx-0">
+                            <div class="col-12">
+                              <div class="table-title rounded-top-4 bg-primary text-uppercase fs-10 fw-bolder text-center p-2">Ave/Set</div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">64</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Set</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">174</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Dig</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">121</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Rec</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">64</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Set</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">174</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Dig</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center">
+                                  <span class="text-primary fs-16 fw-bold px-2">121</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Rec</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="row gx-0">
+                            <div class="col-12">
+                              <div class="table-title rounded-top-4 bg-primary text-uppercase fs-10 fw-bolder text-center p-2">Success %</div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">64</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Set</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">174</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Dig</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">121</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Rec</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">64</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Set</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">174</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Dig</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center">
+                                  <span class="text-primary fs-16 fw-bold px-2">121</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Rec</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="row gx-0">
+                            <div class="col-12">
+                              <div class="table-title rounded-top-4 bg-primary text-uppercase fs-10 fw-bolder text-center p-2">Ave/Set</div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">64</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Set</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">174</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Dig</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">121</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Rec</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">64</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Set</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center border-end border-primary">
+                                  <span class="text-primary fs-16 fw-bold px-2">174</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Dig</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                              <div class="table-column d-flex flex-column h-100 justify-content-center lh-sm bg-secondary py-4">
+                                <div class="table-column-wrapper d-flex flex-column text-center">
+                                  <span class="text-primary fs-16 fw-bold px-2">121</span>
+                                  <span class="text-uppercase text-white fs-10 fw-bold px-2">Rec</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="roster" role="tabpanel" aria-labelledby="roster-tab">
+                      <div class="row gy-6 row-cols-2 row-cols-sm-3 row-cols-lg-5 mb-6 justify-content-center">
+                        <div class="col">
+                          <a href="players-single.html" class="text-decoration-none">
+                            <div class="image-wrapper position-relative mb-1">
+                              <div class="player-image d-flex justify-content-center">
+                                <img src="assets/img/players/CCS_2_Valdez,_A.png" class="img-fluid" alt="Arena plus" width="200" height="200" />
+                              </div>
+                            </div>
+                            <div class="player-name text-center lh-sm mb-1">
+                              <span class="fs-4 fw-bolder text-secondary">Alyssa Valdez</span>
+                            </div>
+                            <div class="player-position d-flex justify-content-around">
+                              <span class="fs-8 fw-bolder text-secondary text-uppercase me-2">Head Coach</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row gy-6 row-cols-2 row-cols-sm-3 row-cols-lg-5">
+                        <div class="col">
+                          <a href="players-single.html" class="text-decoration-none">
+                            <div class="image-wrapper position-relative mb-1">
+                              <div class="player-image d-flex justify-content-center">
+                                <img src="assets/img/players/CCS_2_Valdez,_A.png" class="img-fluid" alt="Arena plus" width="200" height="200" />
+                              </div>
+                            </div>
+                            <div class="player-name text-center lh-sm mb-1">
+                              <span class="fs-4 fw-bolder text-secondary">Alyssa Valdez</span>
+                            </div>
+                            <div class="player-position d-flex justify-content-around w-50 mx-auto">
+                              <span class="fs-8 fw-bolder text-secondary text-uppercase me-2">#2</span>
+                              <span class="fs-8 fw-bolder text-secondary text-uppercase">OH/C</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="players-single.html" class="text-decoration-none">
+                            <div class="image-wrapper position-relative mb-1">
+                              <div class="player-image d-flex justify-content-center">
+                                <img src="assets/img/players/CCS_2_Valdez,_A.png" class="img-fluid" alt="Arena plus" width="200" height="200" />
+                              </div>
+                            </div>
+                            <div class="player-name text-center lh-sm mb-1">
+                              <span class="fs-4 fw-bolder text-secondary">Alyssa Valdez</span>
+                            </div>
+                            <div class="player-position d-flex justify-content-around w-50 mx-auto">
+                              <span class="fs-8 fw-bolder text-secondary text-uppercase me-2">#2</span>
+                              <span class="fs-8 fw-bolder text-secondary text-uppercase">OH/C</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="players-single.html" class="text-decoration-none">
+                            <div class="image-wrapper position-relative mb-1">
+                              <div class="player-image d-flex justify-content-center">
+                                <img src="assets/img/players/CCS_2_Valdez,_A.png" class="img-fluid" alt="Arena plus" width="200" height="200" />
+                              </div>
+                            </div>
+                            <div class="player-name text-center lh-sm mb-1">
+                              <span class="fs-4 fw-bolder text-secondary">Alyssa Valdez</span>
+                            </div>
+                            <div class="player-position d-flex justify-content-around w-50 mx-auto">
+                              <span class="fs-8 fw-bolder text-secondary text-uppercase me-2">#2</span>
+                              <span class="fs-8 fw-bolder text-secondary text-uppercase">OH/C</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="players-single.html" class="text-decoration-none">
+                            <div class="image-wrapper position-relative mb-1">
+                              <div class="player-image d-flex justify-content-center">
+                                <img src="assets/img/players/CCS_2_Valdez,_A.png" class="img-fluid" alt="Arena plus" width="200" height="200" />
+                              </div>
+                            </div>
+                            <div class="player-name text-center lh-sm mb-1">
+                              <span class="fs-4 fw-bolder text-secondary">Alyssa Valdez</span>
+                            </div>
+                            <div class="player-position d-flex justify-content-around w-50 mx-auto">
+                              <span class="fs-8 fw-bolder text-secondary text-uppercase me-2">#2</span>
+                              <span class="fs-8 fw-bolder text-secondary text-uppercase">OH/C</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="players-single.html" class="text-decoration-none">
+                            <div class="image-wrapper position-relative mb-1">
+                              <div class="player-image d-flex justify-content-center">
+                                <img src="assets/img/players/CCS_2_Valdez,_A.png" class="img-fluid" alt="Arena plus" width="200" height="200" />
+                              </div>
+                            </div>
+                            <div class="player-name text-center lh-sm mb-1">
+                              <span class="fs-4 fw-bolder text-secondary">Alyssa Valdez</span>
+                            </div>
+                            <div class="player-position d-flex justify-content-around w-50 mx-auto">
+                              <span class="fs-8 fw-bolder text-secondary text-uppercase me-2">#2</span>
+                              <span class="fs-8 fw-bolder text-secondary text-uppercase">OH/C</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="players-single.html" class="text-decoration-none">
+                            <div class="image-wrapper position-relative mb-1">
+                              <div class="player-image d-flex justify-content-center">
+                                <img src="assets/img/players/CCS_2_Valdez,_A.png" class="img-fluid" alt="Arena plus" width="200" height="200" />
+                              </div>
+                            </div>
+                            <div class="player-name text-center lh-sm mb-1">
+                              <span class="fs-4 fw-bolder text-secondary">Alyssa Valdez</span>
+                            </div>
+                            <div class="player-position d-flex justify-content-around w-50 mx-auto">
+                              <span class="fs-8 fw-bolder text-secondary text-uppercase me-2">#2</span>
+                              <span class="fs-8 fw-bolder text-secondary text-uppercase">OH/C</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="players-single.html" class="text-decoration-none">
+                            <div class="image-wrapper position-relative mb-1">
+                              <div class="player-image d-flex justify-content-center">
+                                <img src="assets/img/players/CCS_2_Valdez,_A.png" class="img-fluid" alt="Arena plus" width="200" height="200" />
+                              </div>
+                            </div>
+                            <div class="player-name text-center lh-sm mb-1">
+                              <span class="fs-4 fw-bolder text-secondary">Alyssa Valdez</span>
+                            </div>
+                            <div class="player-position d-flex justify-content-around w-50 mx-auto">
+                              <span class="fs-8 fw-bolder text-secondary text-uppercase me-2">#2</span>
+                              <span class="fs-8 fw-bolder text-secondary text-uppercase">OH/C</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="players-single.html" class="text-decoration-none">
+                            <div class="image-wrapper position-relative mb-1">
+                              <div class="player-image d-flex justify-content-center">
+                                <img src="assets/img/players/CCS_2_Valdez,_A.png" class="img-fluid" alt="Arena plus" width="200" height="200" />
+                              </div>
+                            </div>
+                            <div class="player-name text-center lh-sm mb-1">
+                              <span class="fs-4 fw-bolder text-secondary">Alyssa Valdez</span>
+                            </div>
+                            <div class="player-position d-flex justify-content-around w-50 mx-auto">
+                              <span class="fs-8 fw-bolder text-secondary text-uppercase me-2">#2</span>
+                              <span class="fs-8 fw-bolder text-secondary text-uppercase">OH/C</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="mw-675px mx-auto">
+                  <div class="d-flex flex-sm-row justify-content-sm-between flex-column align-items-center">
+                    <div class="ads-banner mb-sm-0 mb-6">
+                      <img src="assets/img/logo/Alogo_new.png" class="img-fluid" alt="Arena plus" width="165" height="42" />
+                    </div>
+                    <div class="ads-banner mb-sm-0 mb-6">
+                      <img src="assets/img/logo/UNJ7LGZB2XXJBCJ2QETSW9X2R2FZV9KVTW5THZ2Y-607fe51c.png" class="img-fluid" alt="Kumu" width="155" height="55" />
+                    </div>
+                    <div class="ads-banner">
+                      <img src="assets/img/logo/images-3.png" class="img-fluid" alt="Milcu" width="105" height="48" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End of Watch live section -->
+        </div>
+        <!-- End of Main content -->
+      </div>
+      <!-- End of Main area code -->
+
+      <!-- Footer code -->
+      <footer class="pvl-footer pt-4 pb-4 bg-gray-900 position-relative">
+        <div class="container-xl position-relative z-1">
+          <div class="row row-cols-1 gy-4">
+            <div class="col text-center d-block d-lg-none order-1 order-lg-1">
+              <img src="assets/img/logo/pvl-logo-white.png" class="img-fluid" alt="Arena plus" width="115" height="48" />
+            </div>
+            <div class="col text-center order-3 order-lg-1">
+              <span class="text-white fs-6 fw-bold">Quick Links</span>
+            </div>
+            <div class="col order-4 order-lg-1">
+              <div class="mw-980px mx-auto">
+                <div class="footer-nav">
+                  <ul class="d-flex justify-content-around list-style-none m-0 p-0">
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="news.html">Latest News</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="teams.html">Teams</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="players.html">Players</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="standings.html">Standings</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="recap.html">Recap</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="live.html">Live</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="videos.html">Videos</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="gallery.html">Photos</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="announcement.html">Announcement</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="tickets.html">Tickets</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col border-bottom-0 border-bottom-lg border-white pb-0 pb-lg-6 order-2 order-lg-1">
+              <div class="mw-290px mx-auto">
+                <div class="d-flex justify-content-between">
+                  <div class="social-icon-facebook d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/fb-logo.svg" alt="Facebook logo" width="35" height="35" /></a>
+                  </div>
+                  <div class="social-icon-twitter d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/twitter-logo.svg" alt="Twitter logo" width="35" height="35" /></a>
+                  </div>
+                  <div class="social-icon-instagram d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/instagram-logo.svg" alt="Instagram logo" width="35" height="35" /></a>
+                  </div>
+                  <div class="social-icon-youtube d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/youtube-logo.svg" alt="YouTube logo" width="35" height="35" /></a>
+                  </div>
+                  <div class="social-icon-tiktok d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/tiktok-logo.svg" alt="TikTok logo" width="35" height="35" /></a>
+                  </div>
+                  <div class="social-icon-kumu d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/kumu-logo.svg" alt="Kumu logo" width="35" height="35" /></a>
+                  </div>
+                  <div class="social-icon-thread d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/thread-logo.svg" alt="Thread logo" width="35" height="35" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col text-white text-center order-5 order-lg-1">
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. © 2023 Premier Volleyball League</span>
+            </div>
+          </div>
+        </div>
+        <div class="shape-divider-top shape-divider-7 position-absolute top-n50px start-0 w-100 h-100px"></div>
+      </footer>
+      <!-- End of Footer code -->
+    </div>
+
+    <!-- Swiper JS -->
+    <script type="text/javascript" src="node_modules/swiper/swiper-bundle.min.js" id="swiper-js"></script>
+
+    <!-- Bootstrap JS -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script type="text/javascript" src="node_modules/@popperjs/core/dist/umd/popper.min.js" id="popper-js"></script>
+    -->
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js" id="bootstrap-js"></script>
+
+    <!-- Isotope JS -->
+    <script type="text/javascript" src="node_modules/isotope-layout/dist/isotope.pkgd.min.js" id="isotope-js"></script>
+
+    <!-- Infinite Scroll JS -->
+    <script type="text/javascript" src="node_modules/infinite-scroll/dist/infinite-scroll.pkgd.min.js" id="infinite-scroll-js"></script>
+
+    <!-- Fslightbox JS -->
+    <script type="text/javascript" src="node_modules/fslightbox/index.js" id="fslightbox-js"></script>
+
+    <!-- PVL Custom JS -->
+    <script type="text/javascript" src="assets/js/countdown.js" id="pvl-countdown-js"></script>
+    <script type="text/javascript" src="assets/js/custom.js" id="pvl-custom-js"></script>
+  </body>
+</html>

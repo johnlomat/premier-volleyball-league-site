@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latest News | Premier Volleyball League</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png" />
+
+    <!-- PVL Custom CSS -->
+    <link rel="stylesheet" href="assets/css/bundle.css" id="pvl-custom-css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css" id="bootstrap-icons-css" />
+  </head>
+  <body class="pvl-theme news-page">
+    <div id="page-container">
+      <!-- Header code -->
+      <header class="pvl-header fixed-top">
+        <nav class="navbar navbar-expand-xl navbar-light py-0">
+          <div class="container-xl">
+            <a class="navbar-brand position-relative" href="index.html"><img src="assets/img/logo/pvl-logo.png" class="img-fluid pvl-logo" alt="PVL Logo" width="141" height="59" /></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="bi bi-list text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <div class="row row-cols-1 py-4 d-xl-none text-secondary">
+                <div class="col text-center d-flex justify-content-center fs-20">
+                  <div class="user-profile-pic"><i class="bi bi-person-circle"></i></div>
+                </div>
+                <div class="col text-center fs-8 fw-bold text-uppercase">
+                  <div class="user-fullname">Lorem Ipsum Dolor</div>
+                </div>
+                <div class="col text-center fs-3">
+                  <div class="user-last-login">Last Login August 10, 2023</div>
+                </div>
+              </div>
+              <ul class="navbar-nav navbar-nav-scroll me-auto mb-2 mb-xl-0 text-center" style="--bs-scroll-height: 400px">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="news.html">Latest News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="teams.html">Teams</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="players.html">Players</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="standings.html">Standings</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="schedule.html">Schedule</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="recap.html">Recap</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="live.html">Live</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="videos.html">Videos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Photos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="announcement.html">Announcement</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tickets.html">Tickets</a>
+                </li>
+                <li class="nav-item me-2 d-none d-xl-block">
+                  <a href="">
+                    <img src="assets/img/logo/st-logo.png" class="img-fluid" alt="ST Logo" width="42" height="36" />
+                  </a>
+                </li>
+                <li class="nav-item d-none d-xl-block">
+                  <a href="">
+                    <img src="assets/img/logo/vl-logo.png" class="img-fluid" alt="VL Logo" width="29" height="34" />
+                  </a>
+                </li>
+                <li class="nav-item d-xl-none mt-4">
+                  <a class="nav-link" href="#">My Account</a>
+                </li>
+                <li class="nav-item d-xl-none mb-4">
+                  <a class="nav-link" href="#">Logout</a>
+                </li>
+              </ul>
+              <div class="nav-social-link mx-auto mb-5 d-xl-none">
+                <div class="d-flex justify-content-between">
+                  <div class="social-icon-facebook d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/fb-logo.svg" alt="Facebook logo" width="45" height="45" /></a>
+                  </div>
+                  <div class="social-icon-twitter d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/twitter-logo.svg" alt="Twitter logo" width="45" height="45" /></a>
+                  </div>
+                  <div class="social-icon-instagram d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/instagram-logo.svg" alt="Instagram logo" width="45" height="45" /></a>
+                  </div>
+                  <div class="social-icon-youtube d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/youtube-logo.svg" alt="YouTube logo" width="45" height="45" /></a>
+                  </div>
+                  <div class="social-icon-tiktok d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/tiktok-logo.svg" alt="TikTok logo" width="45" height="45" /></a>
+                  </div>
+                  <div class="social-icon-kumu d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/kumu-logo.svg" alt="Kumu logo" width="45" height="45" /></a>
+                  </div>
+                  <div class="social-icon-thread d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/thread-logo.svg" alt="Thread logo" width="45" height="45" /></a>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary btn-sm rounded-pill d-none d-xl-block" href="login.html" role="button">Login</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- End of Header code -->
+
+      <!-- Main area code -->
+      <div id="pvl-main-area">
+        <!-- Main content -->
+        <div id="main-content">
+          <!-- Hero section -->
+          <section class="pvl-section-1 d-flex align-items-center position-relative bg-gray-900">
+            <div class="container-xl z-1">
+              <div class="row pt-9 pb-8">
+                <div class="col-12">
+                  <div class="text-center">
+                    <h1 class="text-primary fw-bolder">Latest <span class="text-white">News</span></h1>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="ads-banner col-12 d-flex justify-content-center">
+                  <img src="assets/img/ads/the-heart-of-volleyball-ads-banner-2.png" class="img-fluid" alt="Arena plus" width="836" height="104" />
+                </div>
+              </div>
+            </div>
+            <div class="shape-divider-bottom shape-divider-1 position-absolute bottom-n50px start-0 w-100 h-100px"></div>
+          </section>
+          <!-- End of Hero section -->
+
+          <!-- Latest News section -->
+          <section class="pvl-section-2 pt-8 pb-10 bg-light position-relative">
+            <div class="container-xl z-1">
+              <div class="row mb-6">
+                <div class="col d-flex">
+                  <form class="d-flex me-2" role="search">
+                    <input class="form-control border-AEABA3 rounded-0 rounded-start px-2 fs-4" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-AEABA3 fs-4 rounded-0 rounded-end text-white" type="submit"><i class="bi bi-search"></i></button>
+                  </form>
+                </div>
+              </div>
+              <div class="news-posts-container row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-6">
+                <div class="col">
+                  <div class="card text-white overflow-hidden">
+                    <a href="news-single.html" class="text-white">
+                      <div class="ratio ratio-4x3">
+                        <img src="assets/img/news/featured-image-1-493x207.png" class="card-img object-fit-cover img-fluid" alt="Latest news 1" width="493" height="207" />
+                      </div>
+                      <div class="card-img-overlay bg-gradient row align-items-end">
+                        <div class="col">
+                          <h2 class="card-title fs-8 fw-bold mb-0">Ces Molina embraces weight of expectations as newly crowned MVP</h2>
+                        </div>
+                        <div class="col-auto">
+                          <span class="card-text fs-5">Aug 1, 2023</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-white overflow-hidden">
+                    <a href="news-single.html" class="text-white">
+                      <div class="ratio ratio-4x3">
+                        <img src="assets/img/news/featured-image-2-493x207.png" class="card-img object-fit-cover img-fluid" alt="Latest news 1" width="493" height="207" />
+                      </div>
+                      <div class="card-img-overlay bg-gradient row align-items-end">
+                        <div class="col">
+                          <h2 class="card-title fs-8 fw-bold mb-0">Tots Carlos has no regrets with Invitational Final result</h2>
+                        </div>
+                        <div class="col-auto">
+                          <span class="card-text fs-5">Aug 1, 2023</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-white overflow-hidden">
+                    <a href="news-single.html" class="text-white">
+                      <div class="ratio ratio-4x3">
+                        <img src="assets/img/news/featured-image-3-493x207.png" class="card-img object-fit-cover img-fluid" alt="Latest news 1" width="493" height="207" />
+                      </div>
+                      <div class="card-img-overlay bg-gradient row align-items-end">
+                        <div class="col">
+                          <h2 class="card-title fs-8 fw-bold mb-0">Alyssa Valdez vows to come back stronger after heartbreaking loss</h2>
+                        </div>
+                        <div class="col-auto">
+                          <span class="card-text fs-5">Aug 1, 2023</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-white overflow-hidden">
+                    <a href="news-single.html" class="text-white">
+                      <div class="ratio ratio-4x3">
+                        <img src="assets/img/news/featured-image-4-493x207.png" class="card-img object-fit-cover img-fluid" alt="Latest news 1" width="493" height="207" />
+                      </div>
+                      <div class="card-img-overlay bg-gradient row align-items-end">
+                        <div class="col">
+                          <h2 class="card-title fs-8 fw-bold mb-0">Kurashiki helps in Philsports cleanup after ceremony</h2>
+                        </div>
+                        <div class="col-auto">
+                          <span class="card-text fs-5">Aug 1, 2023</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-white overflow-hidden">
+                    <a href="news-single.html" class="text-white">
+                      <div class="ratio ratio-4x3">
+                        <img src="assets/img/news/featured-image-5-493x207.png" class="card-img object-fit-cover img-fluid" alt="Latest news 1" width="493" height="207" />
+                      </div>
+                      <div class="card-img-overlay bg-gradient row align-items-end">
+                        <div class="col">
+                          <h2 class="card-title fs-8 fw-bold mb-0">Kurashiki eyes PVL Invitational encore</h2>
+                        </div>
+                        <div class="col-auto">
+                          <span class="card-text fs-5">Aug 1, 2023</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-white overflow-hidden">
+                    <a href="news-single.html" class="text-white">
+                      <div class="ratio ratio-4x3">
+                        <img src="assets/img/news/featured-image-6-493x207.png" class="card-img object-fit-cover img-fluid" alt="Latest news 1" width="493" height="207" />
+                      </div>
+                      <div class="card-img-overlay bg-gradient row align-items-end">
+                        <div class="col">
+                          <h2 class="card-title fs-8 fw-bold mb-0">Huong Nguyen hails invaluable learnings from PVL experience</h2>
+                        </div>
+                        <div class="col-auto">
+                          <span class="card-text fs-5">Aug 1, 2023</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="page-load-status mt-6">
+                <div class="infinite-scroll-request">
+                  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-6">
+                    <div class="col">
+                      <div class="card text-white overflow-hidden border-0 placeholder-glow ratio ratio-4x3" aria-hidden="true">
+                        <div class="card-img-overlay bg-gray-200 row align-items-end m-0">
+                          <div class="col-9">
+                            <span class="card-title fs-8 fw-bold mb-0 bg-gray-500 placeholder col-12"></span>
+                            <span class="card-title fs-8 fw-bold mb-0 bg-gray-500 placeholder col-12"></span>
+                          </div>
+                          <div class="col-3">
+                            <span class="card-text fs-5 bg-gray-500 placeholder col-12"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card text-white overflow-hidden border-0 placeholder-glow ratio ratio-4x3" aria-hidden="true">
+                        <div class="card-img-overlay bg-gray-200 row align-items-end m-0">
+                          <div class="col-9">
+                            <span class="card-title fs-8 fw-bold mb-0 bg-gray-500 placeholder col-12"></span>
+                            <span class="card-title fs-8 fw-bold mb-0 bg-gray-500 placeholder col-12"></span>
+                          </div>
+                          <div class="col-3">
+                            <span class="card-text fs-5 bg-gray-500 placeholder col-12"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card text-white overflow-hidden border-0 placeholder-glow ratio ratio-4x3" aria-hidden="true">
+                        <div class="card-img-overlay bg-gray-200 row align-items-end m-0">
+                          <div class="col-9">
+                            <span class="card-title fs-8 fw-bold mb-0 bg-gray-500 placeholder col-12"></span>
+                            <span class="card-title fs-8 fw-bold mb-0 bg-gray-500 placeholder col-12"></span>
+                          </div>
+                          <div class="col-3">
+                            <span class="card-text fs-5 bg-gray-500 placeholder col-12"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-8 mb-6">
+                <div class="ads-banner col-12 d-flex justify-content-center">
+                  <img src="assets/img/ads/invitational-conference-ads-banner.png" class="img-fluid" alt="Arena plus" width="830" height="102" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="mw-675px mx-auto">
+                  <div class="d-flex flex-sm-row justify-content-sm-between flex-column align-items-center">
+                    <div class="ads-banner mb-sm-0 mb-6">
+                      <img src="assets/img/logo/Alogo_new.png" class="img-fluid" alt="Arena plus" width="165" height="42" />
+                    </div>
+                    <div class="ads-banner mb-sm-0 mb-6">
+                      <img src="assets/img/logo/UNJ7LGZB2XXJBCJ2QETSW9X2R2FZV9KVTW5THZ2Y-607fe51c.png" class="img-fluid" alt="Kumu" width="155" height="55" />
+                    </div>
+                    <div class="ads-banner">
+                      <img src="assets/img/logo/images-3.png" class="img-fluid" alt="Milcu" width="105" height="48" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End of Latest News section -->
+        </div>
+        <!-- End of Main content -->
+      </div>
+      <!-- End of Main area code -->
+
+      <!-- Footer code -->
+      <footer class="pvl-footer pt-4 pb-4 bg-gray-900 position-relative">
+        <div class="container-xl position-relative z-1">
+          <div class="row row-cols-1 gy-4">
+            <div class="col text-center d-block d-lg-none order-1 order-lg-1">
+              <img src="assets/img/logo/pvl-logo-white.png" class="img-fluid" alt="Arena plus" width="115" height="48" />
+            </div>
+            <div class="col text-center order-3 order-lg-1">
+              <span class="text-white fs-6 fw-bold">Quick Links</span>
+            </div>
+            <div class="col order-4 order-lg-1">
+              <div class="mw-980px mx-auto">
+                <div class="footer-nav">
+                  <ul class="d-flex justify-content-around list-style-none m-0 p-0">
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="news.html">Latest News</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="teams.html">Teams</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="players.html">Players</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="standings.html">Standings</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="recap.html">Recap</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="live.html">Live</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="videos.html">Videos</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="gallery.html">Photos</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="announcement.html">Announcement</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="tickets.html">Tickets</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col border-bottom-0 border-bottom-lg border-white pb-0 pb-lg-6 order-2 order-lg-1">
+              <div class="mw-290px mx-auto">
+                <div class="d-flex justify-content-between">
+                  <div class="social-icon-facebook d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/fb-logo.svg" alt="Facebook logo" width="35" height="35" /></a>
+                  </div>
+                  <div class="social-icon-twitter d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/twitter-logo.svg" alt="Twitter logo" width="35" height="35" /></a>
+                  </div>
+                  <div class="social-icon-instagram d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/instagram-logo.svg" alt="Instagram logo" width="35" height="35" /></a>
+                  </div>
+                  <div class="social-icon-youtube d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/youtube-logo.svg" alt="YouTube logo" width="35" height="35" /></a>
+                  </div>
+                  <div class="social-icon-tiktok d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/tiktok-logo.svg" alt="TikTok logo" width="35" height="35" /></a>
+                  </div>
+                  <div class="social-icon-kumu d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/kumu-logo.svg" alt="Kumu logo" width="35" height="35" /></a>
+                  </div>
+                  <div class="social-icon-thread d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/thread-logo.svg" alt="Thread logo" width="35" height="35" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col text-white text-center order-5 order-lg-1">
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. © 2023 Premier Volleyball League</span>
+            </div>
+          </div>
+        </div>
+        <div class="shape-divider-top shape-divider-7 position-absolute top-n50px start-0 w-100 h-100px"></div>
+      </footer>
+      <!-- End of Footer code -->
+    </div>
+
+    <!-- Swiper JS -->
+    <script type="text/javascript" src="node_modules/swiper/swiper-bundle.min.js" id="swiper-js"></script>
+
+    <!-- Bootstrap JS -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script type="text/javascript" src="node_modules/@popperjs/core/dist/umd/popper.min.js" id="popper-js"></script>
+    -->
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js" id="bootstrap-js"></script>
+
+    <!-- Isotope JS -->
+    <script type="text/javascript" src="node_modules/isotope-layout/dist/isotope.pkgd.min.js" id="isotope-js"></script>
+
+    <!-- Infinite Scroll JS -->
+    <script type="text/javascript" src="node_modules/infinite-scroll/dist/infinite-scroll.pkgd.min.js" id="infinite-scroll-js"></script>
+
+    <!-- Fslightbox JS -->
+    <script type="text/javascript" src="node_modules/fslightbox/index.js" id="fslightbox-js"></script>
+
+    <!-- PVL Custom JS -->
+    <script type="text/javascript" src="assets/js/countdown.js" id="pvl-countdown-js"></script>
+    <script type="text/javascript" src="assets/js/custom.js" id="pvl-custom-js"></script>
+  </body>
+</html>

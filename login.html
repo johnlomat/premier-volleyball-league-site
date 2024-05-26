@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Premier Volleyball League</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png" />
+
+    <!-- PVL Custom CSS -->
+    <link rel="stylesheet" href="assets/css/bundle.css" id="pvl-custom-css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css" id="bootstrap-icons-css" />
+  </head>
+  <body class="pvl-theme login-page">
+    <div id="page-container">
+      <!-- Header code -->
+      <header class="pvl-header fixed-top">
+        <nav class="navbar navbar-expand-xl navbar-light py-0">
+          <div class="container-xl">
+            <a class="navbar-brand position-relative" href="index.html"><img src="assets/img/logo/pvl-logo.png" class="img-fluid pvl-logo" alt="PVL Logo" width="141" height="59" /></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="bi bi-list text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <div class="row row-cols-1 py-4 d-xl-none text-secondary">
+                <div class="col text-center d-flex justify-content-center fs-20">
+                  <div class="user-profile-pic"><i class="bi bi-person-circle"></i></div>
+                </div>
+                <div class="col text-center fs-8 fw-bold text-uppercase">
+                  <div class="user-fullname">Lorem Ipsum Dolor</div>
+                </div>
+                <div class="col text-center fs-3">
+                  <div class="user-last-login">Last Login August 10, 2023</div>
+                </div>
+              </div>
+              <ul class="navbar-nav navbar-nav-scroll me-auto mb-2 mb-xl-0 text-center" style="--bs-scroll-height: 400px">
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html">Latest News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="teams.html">Teams</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="players.html">Players</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="standings.html">Standings</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="schedule.html">Schedule</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="recap.html">Recap</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="live.html">Live</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="videos.html">Videos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Photos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="announcement.html">Announcement</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tickets.html">Tickets</a>
+                </li>
+                <li class="nav-item me-2 d-none d-xl-block">
+                  <a href="">
+                    <img src="assets/img/logo/st-logo.png" class="img-fluid" alt="ST Logo" width="42" height="36" />
+                  </a>
+                </li>
+                <li class="nav-item d-none d-xl-block">
+                  <a href="">
+                    <img src="assets/img/logo/vl-logo.png" class="img-fluid" alt="VL Logo" width="29" height="34" />
+                  </a>
+                </li>
+                <li class="nav-item d-xl-none mt-4">
+                  <a class="nav-link" href="#">My Account</a>
+                </li>
+                <li class="nav-item d-xl-none mb-4">
+                  <a class="nav-link" href="#">Logout</a>
+                </li>
+              </ul>
+              <div class="nav-social-link mx-auto mb-5 d-xl-none">
+                <div class="d-flex justify-content-between">
+                  <div class="social-icon-facebook d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/fb-logo.svg" alt="Facebook logo" width="45" height="45" /></a>
+                  </div>
+                  <div class="social-icon-twitter d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/twitter-logo.svg" alt="Twitter logo" width="45" height="45" /></a>
+                  </div>
+                  <div class="social-icon-instagram d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/instagram-logo.svg" alt="Instagram logo" width="45" height="45" /></a>
+                  </div>
+                  <div class="social-icon-youtube d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/youtube-logo.svg" alt="YouTube logo" width="45" height="45" /></a>
+                  </div>
+                  <div class="social-icon-tiktok d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/tiktok-logo.svg" alt="TikTok logo" width="45" height="45" /></a>
+                  </div>
+                  <div class="social-icon-kumu d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/kumu-logo.svg" alt="Kumu logo" width="45" height="45" /></a>
+                  </div>
+                  <div class="social-icon-thread d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/thread-logo.svg" alt="Thread logo" width="45" height="45" /></a>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary btn-sm rounded-pill d-none d-xl-block" href="login.html" role="button" aria-current="page">Login</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- End of Header code -->
+
+      <!-- Main area code -->
+      <div id="pvl-main-area">
+        <!-- Main content -->
+        <div id="main-content">
+          <!-- Login section -->
+          <section class="pvl-section-1 d-flex align-items-center position-relative bg-gray-900">
+            <div class="container-xl z-1">
+              <div class="row pt-10 pb-3">
+                <div class="col-12 pt-7">
+                  <div class="text-center">
+                    <h1 class="text-primary fw-bolder">Login</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="shadow-sm p-5 bg-white rounded-3 mw-450px mx-auto">
+                    <form>
+                      <div class="mb-3">
+                        <input type="email" placeholder="Email" class="form-control" id="InputEmail" />
+                      </div>
+                      <div class="mb-3">
+                        <input type="password" placeholder="Password" class="form-control" id="InputPassword" />
+                      </div>
+                      <div class="mb-3 text-center">
+                        <a href="#" class="forget-password text-gray-500">Forgot Password</a>
+                      </div>
+                      <button type="submit" class="btn btn-primary text-uppercase w-100 mb-3">Login</button>
+                      <div class="text-center">Not a member <a href="#" class="forget-password text-danger">Sign Up</a></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shape-divider-bottom shape-divider-1 position-absolute bottom-n50px start-0 w-100 h-100px"></div>
+          </section>
+          <section class="pvl-section-2 py-10 bg-light position-relative"></section>
+          <!-- End of Login section -->
+        </div>
+        <!-- End of Main content -->
+      </div>
+      <!-- End of Main area code -->
+
+      <!-- Footer code -->
+      <footer class="pvl-footer pt-4 pb-4 bg-gray-900 position-relative">
+        <div class="container-xl position-relative z-1">
+          <div class="row row-cols-1 gy-4">
+            <div class="col text-center d-block d-lg-none order-1 order-lg-1">
+              <img src="assets/img/logo/pvl-logo-white.png" class="img-fluid" alt="Arena plus" width="115" height="48" />
+            </div>
+            <div class="col text-center order-3 order-lg-1">
+              <span class="text-white fs-6 fw-bold">Quick Links</span>
+            </div>
+            <div class="col order-4 order-lg-1">
+              <div class="mw-980px mx-auto">
+                <div class="footer-nav">
+                  <ul class="d-flex justify-content-around list-style-none m-0 p-0">
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="news.html">Latest News</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="teams.html">Teams</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="players.html">Players</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="standings.html">Standings</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="recap.html">Recap</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="live.html">Live</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="videos.html">Videos</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="gallery.html">Photos</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="announcement.html">Announcement</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center mx-2">
+                      <a class="text-decoration-none" href="tickets.html">Tickets</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col border-bottom-0 border-bottom-lg border-white pb-0 pb-lg-6 order-2 order-lg-1">
+              <div class="mw-290px mx-auto">
+                <div class="d-flex justify-content-between">
+                  <div class="social-icon-facebook d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/fb-logo.svg" alt="Facebook logo" width="35" height="35" /></a>
+                  </div>
+                  <div class="social-icon-twitter d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/twitter-logo.svg" alt="Twitter logo" width="35" height="35" /></a>
+                  </div>
+                  <div class="social-icon-instagram d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/instagram-logo.svg" alt="Instagram logo" width="35" height="35" /></a>
+                  </div>
+                  <div class="social-icon-youtube d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/youtube-logo.svg" alt="YouTube logo" width="35" height="35" /></a>
+                  </div>
+                  <div class="social-icon-tiktok d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/tiktok-logo.svg" alt="TikTok logo" width="35" height="35" /></a>
+                  </div>
+                  <div class="social-icon-kumu d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/kumu-logo.svg" alt="Kumu logo" width="35" height="35" /></a>
+                  </div>
+                  <div class="social-icon-thread d-flex justify-content-center">
+                    <a href=""><img src="assets/img/icons/thread-logo.svg" alt="Thread logo" width="35" height="35" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col text-white text-center order-5 order-lg-1">
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. © 2023 Premier Volleyball League</span>
+            </div>
+          </div>
+        </div>
+        <div class="shape-divider-top shape-divider-7 position-absolute top-n50px start-0 w-100 h-100px"></div>
+      </footer>
+      <!-- End of Footer code -->
+    </div>
+
+    <!-- Swiper JS -->
+    <script type="text/javascript" src="node_modules/swiper/swiper-bundle.min.js" id="swiper-js"></script>
+
+    <!-- Bootstrap JS -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script type="text/javascript" src="node_modules/@popperjs/core/dist/umd/popper.min.js" id="popper-js"></script>
+    -->
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js" id="bootstrap-js"></script>
+
+    <!-- Isotope JS -->
+    <script type="text/javascript" src="node_modules/isotope-layout/dist/isotope.pkgd.min.js" id="isotope-js"></script>
+
+    <!-- Infinite Scroll JS -->
+    <script type="text/javascript" src="node_modules/infinite-scroll/dist/infinite-scroll.pkgd.min.js" id="infinite-scroll-js"></script>
+
+    <!-- Fslightbox JS -->
+    <script type="text/javascript" src="node_modules/fslightbox/index.js" id="fslightbox-js"></script>
+
+    <!-- PVL Custom JS -->
+    <script type="text/javascript" src="assets/js/countdown.js" id="pvl-countdown-js"></script>
+    <script type="text/javascript" src="assets/js/custom.js" id="pvl-custom-js"></script>
+  </body>
+</html>

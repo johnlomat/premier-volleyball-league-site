@@ -1,0 +1,74 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "width":
+      map-merge(
+        map-get($utilities, "width"),
+        (
+          values: map-merge(map-get(map-get($utilities, "width"), "values"), ($additional-width-values)),
+        )
+      ),
+    "max-width":
+      map-merge(
+        map-get($utilities, "max-width"),
+        (
+          values: map-merge(map-get(map-get($utilities, "max-width"), "values"), ($additional-max-width-values)),
+        )
+      ),
+    "height":
+      map-merge(
+        map-get($utilities, "height"),
+        (
+          values: map-merge(map-get(map-get($utilities, "height"), "values"), ($additional-height-values)),
+        )
+      ),
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
+    "opacity":
+      map-merge(
+        map-get($utilities, "opacity"),
+        (
+          values: map-merge(map-get(map-get($utilities, "opacity"), "values"), ($additional-opacity-values)),
+        )
+      ),
+    "text-align":
+      map-merge(
+        map-get($utilities, "text-align"),
+        (
+          values: map-merge(map-get(map-get($utilities, "text-align"), "values"), ($additional-text-align-values)),
+        )
+      ),
+    "border-bottom":
+      map-merge(
+        map-get($utilities, "border-bottom"),
+        (
+          responsive: true,
+        )
+      ),
+    "text-clamp": (
+      property: -webkit-line-clamp,
+      class: clamp,
+      values: $text-clamp-values,
+    ),
+    "transform-skew": (
+      property: transform,
+      class: skew,
+      values: $transform-skew-values,
+    ),
+    "list-style": (
+      property: list-style,
+      class: list-style,
+      values: $list-style-values,
+    ),
+    "text-shadow": (
+      property: text-shadow,
+      class: text-shadow,
+      values: $text-shadow-values,
+    ),
+  )
+);

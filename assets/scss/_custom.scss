@@ -1,0 +1,183 @@
+// Global style
+.pvl-theme {
+  // Main content top spacing
+  #pvl-main-area {
+    margin-top: px-to-rem(69px);
+  }
+  .versus {
+    width: px-to-rem(36px);
+    height: px-to-rem(36px);
+  }
+  .link-tab {
+    a {
+      text-decoration: none;
+      color: $secondary;
+      &.active {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+  }
+  .player-profile {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .player-image {
+      position: relative;
+      z-index: 1;
+      padding-left: px-to-rem(50px);
+    }
+    .team-image {
+      position: absolute;
+      padding-right: px-to-rem(50px);
+    }
+  }
+  .video-thumbnail {
+    .bi-play-circle {
+      font-size: px-to-rem(70px);
+      width: px-to-rem(80px);
+      height: px-to-rem(80px);
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 100%;
+    }
+  }
+
+  // Custom scrollbar
+  .pvl-custom-scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #f5f5f5;
+  }
+  .pvl-custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #f5f5f5;
+  }
+  .pvl-custom-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: rgba(247, 188, 36, 0.6);
+  }
+
+  // Custom style home page
+  &.home-page {
+    // Player of the game section
+    .player-of-the-game-image {
+      margin-top: px-to-rem(-100px);
+    }
+    @include media-breakpoint-down(md) {
+      .player-of-the-game-image {
+        margin-top: px-to-rem(-50px);
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      .player-of-the-game-image {
+        margin-top: px-to-rem(0px);
+      }
+    }
+  }
+
+  // Custom style standings page
+  &.standings-page {
+    #standings {
+      .table-wrapper {
+        width: px-to-rem(1200px);
+      }
+    }
+  }
+
+  // Custom style players page
+  &.players-page {
+    .teams-logo {
+      img {
+        opacity: 0.3;
+      }
+    }
+    .team-image {
+      max-width: px-to-rem(200px);
+      opacity: 0.3;
+    }
+  }
+
+  // Custom style single video page
+  &.single-video-page {
+    .videos-sidebar {
+      max-height: px-to-rem(620px);
+      overflow: auto;
+
+      .video-title {
+        h2 {
+          font-size: px-to-rem(16px) !important;
+        }
+      }
+      .video-date {
+        span {
+          font-size: px-to-rem(14px) !important;
+        }
+      }
+      .video-thumbnail {
+        .bi-play-circle {
+          font-size: px-to-rem(50px);
+          width: px-to-rem(60px);
+          height: px-to-rem(60px);
+          background: rgba(0, 0, 0, 0.5);
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+
+  // Custom style stats leader page
+  &.stats-leader-page {
+    .table-responsive {
+      .table {
+        width: 100%;
+      }
+      @include media-breakpoint-down(lg) {
+        .table {
+          width: px-to-rem(700px);
+        }
+      }
+    }
+    .player-profile {
+      .player-image {
+        padding-left: px-to-rem(20px);
+      }
+      .team-image {
+        padding-right: px-to-rem(20px);
+      }
+    }
+  }
+
+  // Custom style tickets page
+  &.tickets-page {
+    #map {
+      width: 90vw;
+      height: px-to-rem(600px);
+    }
+  }
+
+  // Footer section
+  .pvl-footer {
+    .footer-nav {
+      a {
+        color: $white;
+        &:hover {
+          color: rgba(255, 255, 255, 0.7);
+        }
+      }
+      @include media-breakpoint-down(lg) {
+        ul {
+          display: grid !important;
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+      @include media-breakpoint-down(md) {
+        ul {
+          display: grid !important;
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    }
+  }
+}

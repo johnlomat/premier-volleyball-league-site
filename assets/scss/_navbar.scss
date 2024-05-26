@@ -1,0 +1,69 @@
+// PVL custom styles navbar
+.pvl-theme {
+  .pvl-header {
+    transition: background-color ease-in-out $navbar-collapsed-transition-duration;
+    .user-profile-pic {
+      .bi-person-circle {
+        transition: color ease-in-out $navbar-collapsed-transition-duration;
+      }
+    }
+    .nav-link {
+      &:hover,
+      &.active {
+        background-color: $secondary;
+      }
+    }
+    .bi-list {
+      &::before {
+        font-size: map-get($font-sizes, 18);
+      }
+    }
+    &.is-collapsed {
+      background-color: $white;
+      .navbar-brand {
+        &::before {
+          background-image: none;
+        }
+      }
+      .nav-social-link {
+        max-width: px-to-rem(420px);
+      }
+      .user-profile-pic {
+        .bi-person-circle {
+          color: $primary !important;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    .pvl-header {
+      background-color: $secondary;
+      .navbar-brand {
+        &::before {
+          content: "";
+          width: 100%;
+          height: calc(100% - 10px);
+          position: absolute;
+          top: px-to-rem(5px);
+          @include background-image("../img/logo/pvl-logo-white.png", cover, no-repeat, center center);
+        }
+        .pvl-logo {
+          opacity: 0;
+        }
+      }
+      .nav-link {
+        text-transform: uppercase;
+      }
+      &.is-collapsed {
+        .pvl-logo {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    .pvl-header {
+      background-color: $white;
+    }
+  }
+}
