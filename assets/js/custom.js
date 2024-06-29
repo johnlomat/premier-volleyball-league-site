@@ -1,3 +1,10 @@
+import Swiper from "swiper/bundle";
+import "bootstrap/dist/js/bootstrap.min.js";
+import "fslightbox";
+import "leaflet/dist/leaflet.js";
+import InfiniteScroll from "infinite-scroll";
+import Isotope from "isotope-layout";
+
 (() => {
   // Debounce
   const debounce = (callback, wait) => {
@@ -293,7 +300,7 @@
       },
       click: isotopeFilter.arrange(),
       click: isotopeFilter.label(),
-      click: (active = () => {
+      click: (swiper.activeIndex = () => {
         // Active button
         document.body.addEventListener("click", function (event) {
           if (event.target.matches(isotopeFilter.filterButton())) {
