@@ -547,5 +547,6 @@ import courtSeatMap from "./leaflet-court-seatmap";
   // Countdown JS
   countdown();
 
+  // Court seatmap
   courtSeatMap();
 })();
