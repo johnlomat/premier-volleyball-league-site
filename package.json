@@ -6,6 +6,14 @@
     "infinite-scroll": "^4.0.1",
     "isotope-layout": "^3.0.6",
     "leaflet": "^1.9.4",
+    "sass": "^1.77.6",
     "swiper": "^10.1.0"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "sass": "sass --watch assets/scss/bundle.scss assets/css/bundle.css"
+  },
+  "devDependencies": {
+    "webpack": "^5.92.1"
   }
 }
