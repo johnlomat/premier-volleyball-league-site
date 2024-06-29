@@ -2,11 +2,26 @@ const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  entry: "./assets/js/custom.js",
+  entry: "./src/js/custom.js",
   output: {
     path: path.resolve(__dirname, "assets/js"),
     filename: "bundle.js",
-    publicPath: "/assets/js/", // Public URL path to output directory
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: [
+          {
+            loader: "style-loader",
+            options: {
+              insert: "body",
+            },
+          },
+          "css-loader",
+        ],
+      },
+    ],
   },
   plugins: [
     new CopyPlugin({
@@ -22,4 +37,7 @@ module.exports = {
       ],
     }),
   ],
+  optimization: {
+    minimize: false,
+  },
 };

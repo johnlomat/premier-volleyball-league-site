@@ -12,7 +12,7 @@
  *  Date with time: 2023-08-10 16:00:00
  */
 
-(() => {
+const countdown = () => {
   const getTimeRemaining = (endtime) => {
     const total = Date.parse(endtime) - Date.parse(new Date());
     const seconds = Math.floor((total / 1000) % 60);
@@ -74,4 +74,6 @@
       initializeClock(".countdown-clock", deadline);
     });
   }
-})();
+};
+
+export default countdown;

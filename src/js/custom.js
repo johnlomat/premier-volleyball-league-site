@@ -1,9 +1,10 @@
 import Swiper from "swiper/bundle";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "fslightbox";
-import "leaflet/dist/leaflet.js";
 import InfiniteScroll from "infinite-scroll";
 import Isotope from "isotope-layout";
+import countdown from "./countdown";
+import courtSeatMap from "./leaflet-court-seatmap";
 
 (() => {
   // Debounce
@@ -542,4 +543,9 @@ import Isotope from "isotope-layout";
       sortAscending: announcementPosts.getAttribute("data-ascending") == "true" ? true : false,
     });
   }
+
+  // Countdown JS
+  countdown();
+
+  courtSeatMap();
 })();

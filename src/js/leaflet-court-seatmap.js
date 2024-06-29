@@ -1,16 +1,20 @@
-// Court data SVG code
-const courtData = {
-  philsport_arena: {
-    view_box: "0 0 1338 1045",
-    bounds: {
-      lat: [0, 0],
-      lng: [1045, 1338],
-    },
-    set_view: {
-      lat: 67,
-      lng: 669,
-    },
-    svg_code: `
+import "../../node_modules/leaflet/dist/leaflet.css";
+import * as L from "leaflet/dist/leaflet-src.esm";
+
+const courtSeatMap = () => {
+  // Court data SVG code
+  const courtData = {
+    philsport_arena: {
+      view_box: "0 0 1338 1045",
+      bounds: {
+        lat: [0, 0],
+        lng: [1045, 1338],
+      },
+      set_view: {
+        lat: 67,
+        lng: 669,
+      },
+      svg_code: `
     <defs>
         <style>
         .philsport_arena .cls-1, .philsport_arena .cls-2 {
@@ -297,18 +301,18 @@ const courtData = {
         <path class="cls-6" d="m831.45,671.83c-.08-1.47-.17-3.23-.16-4.55h-.05c-.36,1.23-.8,2.55-1.33,4l-1.86,5.11h-1.03l-1.7-5.02c-.5-1.48-.92-2.84-1.22-4.09h-.03c-.03,1.31-.11,3.08-.2,4.66l-.28,4.52h-1.3l.73-10.53h1.73l1.8,5.09c.44,1.3.8,2.45,1.06,3.55h.05c.27-1.06.64-2.22,1.11-3.55l1.88-5.09h1.73l.66,10.53h-1.33l-.27-4.62Z"/>
         </g>
     </g>`,
-  },
-  moa_arena: {
-    view_box: "0 0 5500 4125",
-    bounds: {
-      lat: [0, 0],
-      lng: [4125, 5500],
     },
-    set_view: {
-      lat: 66,
-      lng: 2750,
-    },
-    svg_code: `
+    moa_arena: {
+      view_box: "0 0 5500 4125",
+      bounds: {
+        lat: [0, 0],
+        lng: [4125, 5500],
+      },
+      set_view: {
+        lat: 66,
+        lng: 2750,
+      },
+      svg_code: `
     <defs>
       <style>
         .moa_arena .cls-1 {
@@ -1075,18 +1079,18 @@ const courtData = {
         </g>
       </g>
     </g>`,
-  },
-  filoil_arena: {
-    view_box: "0 0 991 865",
-    bounds: {
-      lat: [0, 0],
-      lng: [865, 991],
     },
-    set_view: {
-      lat: 67,
-      lng: 495.5,
-    },
-    svg_code: `
+    filoil_arena: {
+      view_box: "0 0 991 865",
+      bounds: {
+        lat: [0, 0],
+        lng: [865, 991],
+      },
+      set_view: {
+        lat: 67,
+        lng: 495.5,
+      },
+      svg_code: `
     <defs>
       <style>
         .filoil_arena .cls-1 {
@@ -1353,18 +1357,18 @@ const courtData = {
         <path class="cls-3" d="m567.33,808.85l-2.65-4.58c-1.08-1.75-1.75-2.89-2.4-4.09h-.06c-.58,1.2-1.17,2.31-2.25,4.12l-2.49,4.55h-3.08l6.34-10.49-6.09-10.24h3.11l2.74,4.86c.77,1.35,1.35,2.4,1.91,3.51h.09c.58-1.23,1.11-2.18,1.88-3.51l2.83-4.86h3.08l-6.31,10.09,6.46,10.64h-3.11Z"/>
       </g>
     </g>`,
-  },
-  araneta_coliseum_arena: {
-    view_box: "0 0 3245 3330",
-    bounds: {
-      lat: [0, 0],
-      lng: [3330, 3245],
     },
-    set_view: {
-      lat: 67,
-      lng: 1622.5,
-    },
-    svg_code: `
+    araneta_coliseum_arena: {
+      view_box: "0 0 3245 3330",
+      bounds: {
+        lat: [0, 0],
+        lng: [3330, 3245],
+      },
+      set_view: {
+        lat: 67,
+        lng: 1622.5,
+      },
+      svg_code: `
     <defs>
       <style>
         .araneta_coliseum_arena .cls-1, .araneta_coliseum_arena .cls-2, .araneta_coliseum_arena .cls-3 {
@@ -2068,41 +2072,41 @@ const courtData = {
         </g>
       </g>
     </g>`,
-  },
-};
+    },
+  };
 
-const initMap = (EL) => {
-  var map = L.map(EL);
+  const initMap = (EL) => {
+    var map = L.map(EL);
 
-  const id = EL.dataset.court;
-  const data = courtData[id];
-  const {
-    view_box,
-    bounds: { lat: latBounds, lng: lngBounds },
-    set_view: { lat, lng },
-    svg_code,
-  } = data;
-  const seatmapData = JSON.parse(document.getElementById("court-seatmap-leaflet-data").textContent);
+    const id = EL.dataset.court;
+    const data = courtData[id];
+    const {
+      view_box,
+      bounds: { lat: latBounds, lng: lngBounds },
+      set_view: { lat, lng },
+      svg_code,
+    } = data;
+    const seatmapData = JSON.parse(document.getElementById("court-seatmap-leaflet-data").textContent);
 
-  const latLngBounds = L.latLngBounds([latBounds, lngBounds]);
+    const latLngBounds = L.latLngBounds([latBounds, lngBounds]);
 
-  map.fitBounds(latLngBounds);
+    map.fitBounds(latLngBounds);
 
-  map.setView([lat, lng], 2);
+    map.setView([lat, lng], 2);
 
-  map.on("click", function (e) {
-    let srcElement = e.originalEvent.srcElement,
-      popLocation = e.latlng;
+    map.on("click", function (e) {
+      let srcElement = e.originalEvent.srcElement,
+        popLocation = e.latlng;
 
-    if (srcElement.getAttribute("data-leaflet-popup")) {
-      courtSeat = seatmapData.find((item) => item.seat_code === srcElement.getAttribute("data-leaflet-popup-seat-code"));
+      if (srcElement.getAttribute("data-leaflet-popup")) {
+        const courtSeat = seatmapData.find((item) => item.seat_code === srcElement.getAttribute("data-leaflet-popup-seat-code"));
 
-      const { name, image, section, row, seat } = courtSeat;
+        const { name, image, section, row, seat } = courtSeat;
 
-      L.popup()
-        .setLatLng(popLocation)
-        .setContent(
-          `
+        L.popup()
+          .setLatLng(popLocation)
+          .setContent(
+            `
         <div class="row row-cols-1 gy-3">
           <div class="col">
             <h4 class="text-uppercase text-center">${name}</h4>
@@ -2126,40 +2130,43 @@ const initMap = (EL) => {
           </div>
         </div>
       `
-        )
-        .openOn(map);
-    }
-  });
-
-  const svgElement = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-
-  svgElement.setAttribute("xmlns", "http://www.w3.org/2000/svg");
-  svgElement.setAttribute("viewBox", view_box);
-  svgElement.setAttribute("class", EL.dataset.court);
-  svgElement.innerHTML = svg_code;
-
-  const svgOverlay = L.svgOverlay(svgElement, latLngBounds, {
-    interactive: true,
-  }).addTo(map);
-};
-
-const courtTab = document.querySelectorAll("#courts-tab .nav-link");
-const firstCourTab = document.querySelector(document.querySelector("#courts-tab li:first-child .nav-link").getAttribute("data-bs-target")).querySelector("#map");
-
-initMap(firstCourTab);
-firstCourTab.setAttribute("data-map-initialized", "true");
-
-if (courtTab) {
-  courtTab.forEach((item) => {
-    item.addEventListener("click", function () {
-      const courtVenue = document.querySelector(item.getAttribute("data-bs-target")).querySelector("#map");
-
-      if (courtVenue.getAttribute("data-map-initialized")) {
-        return;
-      } else {
-        initMap(courtVenue);
-        courtVenue.setAttribute("data-map-initialized", "true");
+          )
+          .openOn(map);
       }
     });
-  });
-}
+
+    const svgElement = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+
+    svgElement.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    svgElement.setAttribute("viewBox", view_box);
+    svgElement.setAttribute("class", EL.dataset.court);
+    svgElement.innerHTML = svg_code;
+
+    const svgOverlay = L.svgOverlay(svgElement, latLngBounds, {
+      interactive: true,
+    }).addTo(map);
+  };
+
+  const courtTab = document.querySelectorAll("#courts-tab .nav-link");
+
+  if (courtTab.length !== 0) {
+    const firstCourTab = document.querySelector(document.querySelector("#courts-tab li:first-child .nav-link").getAttribute("data-bs-target")).querySelector("#map");
+    initMap(firstCourTab);
+    firstCourTab.setAttribute("data-map-initialized", "true");
+
+    courtTab.forEach((item) => {
+      item.addEventListener("click", function () {
+        const courtVenue = document.querySelector(item.getAttribute("data-bs-target")).querySelector("#map");
+
+        if (courtVenue.getAttribute("data-map-initialized")) {
+          return;
+        } else {
+          initMap(courtVenue);
+          courtVenue.setAttribute("data-map-initialized", "true");
+        }
+      });
+    });
+  }
+};
+
+export default courtSeatMap;
