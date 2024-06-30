@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "webpack",
-    "sass": "sass --watch assets/scss/bundle.scss assets/css/bundle.css"
+    "sass": "sass --watch src/scss/bundle.scss assets/css/bundle.css"
   },
   "dependencies": {
     "bootstrap": "^5.3.1",
